@@ -4,18 +4,21 @@
         <title>Scuffy APP</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://rsms.me/">
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <!-- Подключаем CSS из папки static -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="preconnect" href="https://rsms.me">
+        <link rel="stylesheet" href="https://rsms.meinter/inter.css">
     </head>
     <body>
-        
-        <div align="center">
-            <img class="sc_banner" src="./scuffy_banner.png">
+        <div class="Main"> <!-- Добавил класс Main, который есть в вашем CSS -->
+            <div align="center">
+                <!-- Подключаем картинку из папки static -->
+                <img class="sc_banner" src="{{ url_for('static', filename='scuffy_banner.png') }}">
+            </div>
+            <div class="textbal">
+                <h1>Your Balance</h1>
+            </div>
         </div>
-        <div class="textbal">
-            <h1>Your Balance</h1>
-        </div>
-        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+        <script src="https://telegram.org"></script>
     </body>
 </html>
