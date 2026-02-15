@@ -1,0 +1,74 @@
+:root { 
+    font-family: 'Inter', sans-serif; 
+}
+
+@supports (font-variation-settings: normal) {
+  :root { 
+      font-family: 'Inter var', sans-serif; 
+  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--tg-theme-text-color);
+    background: #1E2226;
+}
+
+.Main {
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    }
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    border: 0;
+    border-radius: 5px;
+    margin-top: 50px;
+    height: 60px;
+    width: 200px;
+    font-style: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--tg-theme-button-text-color);
+    background: var(--tg-theme-button-color);
+}
+
+.sc_banner {
+    width: 320px;
+    margin-top: 15%;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 2px solid #575A60;
+    margin-bottom: 5%;
+}
+
+.textbal {
+    background: #2E3038;
+    border: 2px solid #575A60;
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+    font-family: 'Inter var', sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.textbal h1 {
+    font-family: 'Inter var', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 25px;
+    margin-left: 5%;
+}

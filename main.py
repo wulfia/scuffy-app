@@ -1,10 +1,16 @@
-import colorama
-import random
+from flask import Flask, render_template
+import os
 
-ch = int(input("введите 1/2"))
-ran = random.randint(1, 2)
+app = Flask(__name__)
 
-if ch == ran:
-    print("вы проиграли")
-else:
-    print("вы победили")
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/health')
+def health():
+    return {'status': 'ok'}, 200
+
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 80))
+    app.run(host='0.0.0.0', port=port)
