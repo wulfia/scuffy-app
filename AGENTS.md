@@ -34,6 +34,8 @@ Dependencies: `colorama`, `flask`
 
 ```bash
 python main.py
+# Override the default port (5000) via the PORT env var:
+PORT=8080 python main.py
 ```
 
 Starts Flask on `0.0.0.0` with the port from the `PORT` env var (default **5000**), debug mode enabled.
