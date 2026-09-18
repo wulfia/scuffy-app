@@ -31,6 +31,9 @@ pip install -r requirements.txt
 
 Dependencies: `flask`, `colorama` (see `requirements.txt`).
 
+> TODO: `colorama` is declared in `requirements.txt` but is not imported
+> anywhere in the code. Confirm it is still needed or remove it.
+
 ### Run the development server
 
 ```bash
